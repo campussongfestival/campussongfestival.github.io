@@ -2,16 +2,63 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://snowwinter77.cafe24.com/base_2/index.php">
-  <link rel="canonical" href="https://snowwinter77.cafe24.com/base_2/index.php">
-  <script>
-    window.location.replace("https://snowwinter77.cafe24.com/base_2/index.php");
-  </script>
-  <title>페이지 이동 중...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSFOC</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrap {
+      width: 100%;
+      height: 100vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .fallback {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .fallback a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <p>자동으로 이동하지 않으면
-    <a href="https://snowwinter77.cafe24.com/base_2/index.php">여기를 클릭하세요</a>.
-  </p>
+  <div class="fallback">
+    화면이 안 보이면
+    <a href="https://snowwinter77.cafe24.com/base_2/index.php" target="_blank" rel="noopener noreferrer">
+      새 창에서 열기
+    </a>
+  </div>
+
+  <div class="wrap">
+    <iframe
+      src="https://snowwinter77.cafe24.com/base_2/index.php"
+      title="CSFOC External Page"
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
